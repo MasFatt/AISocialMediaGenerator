@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-// Font setup
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -15,13 +14,13 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-// ✅ SEO Metadata (tanpa viewport & themeColor)
 export const metadata: Metadata = {
   title: {
     default: "AI Social Media Post Generator | Buat Konten Otomatis & Cepat",
     template: "%s | AI Social Media",
   },
-  description: "Buat konten media sosial menarik hanya dalam hitungan detik dengan AI Social Media Post Generator. Praktis, hemat waktu, dan mudah digunakan!",
+  description:
+    "Buat konten media sosial menarik hanya dalam hitungan detik dengan AI Social Media Post Generator. Praktis, hemat waktu, dan mudah digunakan!",
   keywords: [
     "AI Social Media",
     "Artificial Intelligence",
@@ -67,17 +66,14 @@ export const metadata: Metadata = {
       maxVideoPreview: -1,
     },
   },
+  themeColor: "#ffffff", // <-- pindahkan ke sini
 };
 
-// ✅ Tambahkan fungsi generateViewport()
 export const generateViewport = (): Viewport => ({
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
 });
-
-// ✅ Theme color diekspor terpisah
-export const themeColor = "#ffffff";
 
 export default function RootLayout({
   children,
