@@ -66,9 +66,8 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  
-  themeColor: "#ffffff", // <-- pindahkan ke sini
 };
+
 
 export const generateViewport = (): Viewport => ({
   width: "device-width",
