@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Social Media",
     description: "Revolutionize your content strategy with AI-powered tools.",
-    url: "https://www.aisocialmedia.com",
+    url: "https://www.ordal.my.id",
     siteName: "AI Social Media",
     locale: "en_US",
     type: "website",
@@ -68,7 +68,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export const generateViewport = (): Viewport => ({
   width: "device-width",
   initialScale: 1,
@@ -82,6 +81,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black`}
       >
